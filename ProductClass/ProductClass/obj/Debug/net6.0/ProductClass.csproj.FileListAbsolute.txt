@@ -1,0 +1,15 @@
+C:\HomeWork\ProductClass\ProductClass\bin\Debug\net6.0\ProductClass.exe
+C:\HomeWork\ProductClass\ProductClass\bin\Debug\net6.0\ProductClass.deps.json
+C:\HomeWork\ProductClass\ProductClass\bin\Debug\net6.0\ProductClass.runtimeconfig.json
+C:\HomeWork\ProductClass\ProductClass\bin\Debug\net6.0\ProductClass.dll
+C:\HomeWork\ProductClass\ProductClass\bin\Debug\net6.0\ProductClass.pdb
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.csproj.AssemblyReference.cache
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.AssemblyInfoInputs.cache
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.AssemblyInfo.cs
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.csproj.CoreCompileInputs.cache
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.dll
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\refint\ProductClass.dll
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.pdb
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ProductClass.genruntimeconfig.cache
+C:\HomeWork\ProductClass\ProductClass\obj\Debug\net6.0\ref\ProductClass.dll

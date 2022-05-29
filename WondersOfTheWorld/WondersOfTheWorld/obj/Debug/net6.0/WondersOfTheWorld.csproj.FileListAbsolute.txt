@@ -1,0 +1,15 @@
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\bin\Debug\net6.0\WondersOfTheWorld.exe
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\bin\Debug\net6.0\WondersOfTheWorld.deps.json
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\bin\Debug\net6.0\WondersOfTheWorld.runtimeconfig.json
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\bin\Debug\net6.0\WondersOfTheWorld.dll
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\bin\Debug\net6.0\WondersOfTheWorld.pdb
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.csproj.AssemblyReference.cache
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.AssemblyInfoInputs.cache
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.AssemblyInfo.cs
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.csproj.CoreCompileInputs.cache
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.dll
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\refint\WondersOfTheWorld.dll
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.pdb
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\WondersOfTheWorld.genruntimeconfig.cache
+C:\HomeWork\WondersOfTheWorld\WondersOfTheWorld\obj\Debug\net6.0\ref\WondersOfTheWorld.dll
