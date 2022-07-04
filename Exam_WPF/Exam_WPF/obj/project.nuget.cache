@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LB6XwoNnZd/z/Sbu+zNLoQ04HBObgWNb7LBFwuhR6hWj+BvrV+6s3Tij6bLd5pBNAgpjZbod7jRNChnUWcxaQg==",
+  "success": true,
+  "projectFilePath": "C:\\HomeWork\\Exam_WPF\\Exam_WPF\\Exam_WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\omark\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
+    "C:\\Users\\omark\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

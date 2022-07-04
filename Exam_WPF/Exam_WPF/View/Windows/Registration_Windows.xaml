@@ -1,0 +1,22 @@
+﻿<Window x:Class="Exam_WPF.View.Registration_Windows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam_WPF.View"
+        mc:Ignorable="d"
+        Title="Registration_Windows" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Name"/>
+            <TextBox x:Name ="Reg_Name"/>
+            <TextBlock Text="Surename"/>
+            <TextBox x:Name="Reg_SureName"/>
+            <TextBlock Text="Login"/>
+            <TextBox x:Name="Reg_Login"/>
+            <TextBlock Text="Password"/>
+            <TextBox x:Name="Reg_Password"/>
+            <Button Click="Register_Click" Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Window>
