@@ -44,10 +44,11 @@ namespace Exam_WPF
         }
         private void Registration_Button_Click(object sender, RoutedEventArgs e)
         {
-            var registration_Windows = new Registration_Windows();
-            registration_Windows.ShowDialog();
+            AddUserCalled?.Invoke(this, EventArgs.Empty);
+            
         }
         public event EventHandler<UserViewEventArguments> GetUserCalled;
+        public event EventHandler<EventArgs> AddUserCalled;
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             User user = new();
@@ -95,5 +96,6 @@ namespace Exam_WPF
             }
             
         }
+       
     }
 }

@@ -25,6 +25,16 @@
         "build": {
           "build/MaterialDesignThemes.targets": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -83,11 +93,17 @@
         "materialdesignthemes.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "MaterialDesignThemes >= 4.5.0"
+      "MaterialDesignThemes >= 4.5.0",
+      "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -116,7 +132,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\HomeWork\\Exam_WPF\\Services\\Services.csproj": {
+              "projectPath": "C:\\HomeWork\\Exam_WPF\\Services\\Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

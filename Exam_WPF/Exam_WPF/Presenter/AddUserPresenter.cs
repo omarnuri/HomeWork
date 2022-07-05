@@ -21,5 +21,9 @@ public class AddUserPresenter
     {
         View.IsUserExist(Model.AddUser(e.User));
     }
+    void Show()
+    {
+        View.Show();
+    }
 
 }

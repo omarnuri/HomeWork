@@ -14,6 +14,12 @@ public class UserPresenter
         View = view;
         Model = model;
         View.GetUserCalled += View_ShowUserCalled;
+        view.AddUserCalled += View_AddUserCalled;
+    }
+    private void View_AddUserCalled(object? sender, EventArgs e)
+    {
+        var presenter = ServiceLocator.Instance.Get<AddUserPresenter>();
+       
     }
      private void View_ShowUserCalled(object? sender, UserViewEventArguments e)
         {

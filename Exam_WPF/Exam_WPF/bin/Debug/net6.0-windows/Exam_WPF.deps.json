@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "Exam_WPF/1.0.0": {
         "dependencies": {
-          "MaterialDesignThemes": "4.5.0"
+          "MaterialDesignThemes": "4.5.0",
+          "Services": "1.0.0"
         },
         "runtime": {
           "Exam_WPF.dll": {}
@@ -32,6 +33,11 @@
             "fileVersion": "4.5.0.0"
           }
         }
+      },
+      "Services/1.0.0": {
+        "runtime": {
+          "Services.dll": {}
+        }
       }
     }
   },
@@ -54,6 +60,11 @@
       "sha512": "sha512-G26hIGFwGH5q46CD59zGiAs4aLsASsKCCBqgnISPwIcq8pAfKRRAKxXfOQJgNDyIUnVm5Ug67gldsEgeWP6GoQ==",
       "path": "materialdesignthemes/4.5.0",
       "hashPath": "materialdesignthemes.4.5.0.nupkg.sha512"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

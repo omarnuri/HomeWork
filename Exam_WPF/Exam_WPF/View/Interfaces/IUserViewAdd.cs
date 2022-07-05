@@ -9,4 +9,6 @@ public interface IUserViewAdd
 {
     public event EventHandler<UserViewAddEventArgs> UserViewAdd;
     public void IsUserExist(bool user);
+    public void Show();
+   
 }

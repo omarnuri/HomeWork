@@ -27,3 +27,5 @@ C:\HomeWork\Exam_WPF\Exam_WPF\obj\Debug\net6.0-windows\View\Windows\Login_Window
 C:\HomeWork\Exam_WPF\Exam_WPF\obj\Debug\net6.0-windows\View\Windows\Registration_Windows.baml
 C:\HomeWork\Exam_WPF\Exam_WPF\obj\Debug\net6.0-windows\View\Windows\WorkSpace_Window.g.cs
 C:\HomeWork\Exam_WPF\Exam_WPF\obj\Debug\net6.0-windows\View\Windows\WorkSpace_Window.baml
+C:\HomeWork\Exam_WPF\Exam_WPF\bin\Debug\net6.0-windows\Services.dll
+C:\HomeWork\Exam_WPF\Exam_WPF\bin\Debug\net6.0-windows\Services.pdb

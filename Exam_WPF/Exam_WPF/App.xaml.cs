@@ -8,7 +8,6 @@ using System.Windows;
 using Exam_WPF.View.Windows;
 using Exam_WPF.View;
 
-
 namespace Exam_WPF
 {
     /// <summary>
@@ -19,19 +18,36 @@ namespace Exam_WPF
         public App()
         {
             //View
-            var view = new Login_Window();
+            var userView = new Login_Window();
          
             //Model
-            var model = new UserBaseModel();
+            var userModel = new UserBaseModel();
             //Presenter
-            var presenter = new UserPresenter(model, view);
+            var userPresenter = new UserPresenter(userModel, userView);
            
             
-            this.MainWindow = view;
+            this.MainWindow = userView;
             this.MainWindow.Show();
+            ServiceLocator.Instance.Add(
+                    () => { 
+                        return userPresenter; 
+                    }
+                    );
+            ServiceLocator.Instance.Add(
+                    () => {
+                        var addUserView = new Registration_Windows();
+                        var addUserPresenter = new AddUserPresenter(userModel, addUserView);
+                        return addUserPresenter;
+
+                       
+                    }
+                    );
             
-            
-            
+
+
+
+
+
         }
     }
 }
