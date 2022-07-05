@@ -10,11 +10,16 @@ public class AddUserPresenter
     IUserViewAdd View;
     IUserModel Model;
 
-    public AddUserPresenter(IUserModel model, IUserView view)
+    public AddUserPresenter(IUserModel model, IUserViewAdd view)
     {
-        View = View;
+        View = view;
         Model = model;
+        View.UserViewAdd += View_AddUserCalled;
 
+    }
+    public void View_AddUserCalled(object? sender, UserViewAddEventArgs e)
+    {
+        View.IsUserExist(Model.AddUser(e.User));
     }
 
 }

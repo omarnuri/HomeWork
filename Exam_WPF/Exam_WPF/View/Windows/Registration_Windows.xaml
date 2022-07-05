@@ -16,6 +16,7 @@
             <TextBox x:Name="Reg_Login"/>
             <TextBlock Text="Password"/>
             <TextBox x:Name="Reg_Password"/>
+            <TextBlock Text="" Foreground="Red" Name ="Error_Message_Text"/> 
             <Button Click="Register_Click" Cursor="Hand"/>
         </StackPanel>
     </Grid>

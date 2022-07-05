@@ -23,7 +23,16 @@ namespace Exam_WPF.View
             InitializeComponent();
 
         }
-        public event EventHandler<UserViewAddEventArgs> ShowRegUserCalled;
+        public void IsUserExist (bool isUserExis )
+        {
+            if (isUserExis)
+            {
+                Error_Message_Text.Text = "Такой логин уже существуюет, попробуйте другой вариант!";
+            }
+
+        }
+
+        public event EventHandler<UserViewAddEventArgs> UserViewAdd;
         private void Register_Click(object sender, RoutedEventArgs e)
         {
             User user = new();
@@ -31,12 +40,9 @@ namespace Exam_WPF.View
             user.Surename = Reg_SureName.Text;
             user.Password = Reg_Password.Text;
             user.Login = Reg_Login.Text;
-            ShowRegUserCalled?.Invoke(this, new UserViewAddEventArgs(user));
+            UserViewAdd?.Invoke(this, new UserViewAddEventArgs(user));
         }
-        //bool IUserViewAdd(User user)
-        //{
-
-        //}
+      
 
     
     }

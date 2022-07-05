@@ -7,5 +7,6 @@ using System.Threading.Tasks;
 
 public interface IUserViewAdd
 {
-
+    public event EventHandler<UserViewAddEventArgs> UserViewAdd;
+    public void IsUserExist(bool user);
 }

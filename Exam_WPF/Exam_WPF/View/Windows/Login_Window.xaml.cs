@@ -55,5 +55,45 @@ namespace Exam_WPF
             user.Password = Password_Field.Password;
             GetUserCalled?.Invoke(this, new UserViewEventArguments(user));
         }
+        private void Password_Field_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (Login_Field.Text != null && Password_Field.Password != null && Login_Field.Text != string.Empty && Password_Field.Password != string.Empty)
+            {
+                Login_Button.IsEnabled = true;
+            }
+            else
+            {
+                Login_Button.IsEnabled = false;
+            }
+            Password_Field_Text.Text = Password_Field.Password;
+            
+        }
+        private void Login_Field_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (Login_Field.Text != null && Password_Field.Password != null && Login_Field.Text != string.Empty && Password_Field.Password != string.Empty)
+            {
+                Login_Button.IsEnabled = true;
+            }
+            else
+            {
+                Login_Button.IsEnabled = false;
+            }
+        }
+        private void ShowButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            if (Password_Field.Visibility == Visibility.Hidden)
+            {
+                Password_Field.Visibility = Visibility.Visible;
+                Password_Field_Text.Visibility = Visibility.Hidden;
+                Show_Button.Content = "Show";
+            }
+            else
+            {
+                Password_Field.Visibility = Visibility.Hidden;
+                Password_Field_Text.Visibility = Visibility.Visible;
+                Show_Button.Content = "Hide";
+            }
+            
+        }
     }
 }

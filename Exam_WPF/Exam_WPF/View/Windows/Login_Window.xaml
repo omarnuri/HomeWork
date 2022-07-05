@@ -10,6 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
+
             <ColumnDefinition Width="Auto"/>
 
         </Grid.ColumnDefinitions>
@@ -31,7 +32,29 @@
 
 
         </Grid>
-        <Grid Grid.Column="2">
+        <Grid Grid.Column="1" Margin="100 0 100 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Source="C:\HomeWork\Exam_WPF\Exam_WPF\Recources\Logo_White.png" Height="100" Margin="80 10 80 0" />
+
+
+            <StackPanel Grid.Row="1" Orientation="Vertical" Height="Auto" Width="Auto">
+                <TextBlock Text="Login" Foreground="White" />
+                <TextBox Name ="Login_Field" Foreground="White" TextChanged="Login_Field_TextChanged"/>
+                <TextBlock Text="Password" Foreground="White" />
+                <TextBox Foreground="White" Name="Password_Field_Text"  Visibility="Hidden" Margin="0 0 0 -25" Text="{Binding ElementName=Password_Field, Path=Password, Mode=TwoWay}"></TextBox>
+                <PasswordBox Name ="Password_Field" Foreground ="White" PasswordChanged="Password_Field_PasswordChanged" Cursor="Arrow"/>
+                <TextBlock Name="Error_Field" Foreground="Red" Text=""/>
+                <Button IsEnabled="False" Content="Login" Click="Login_Button_Click" Name ="Login_Button" Margin="100 10 100 0"></Button>
+                <Button Content="Registration" Margin="100 10 100 0" Click="Registration_Button_Click"></Button>
+            </StackPanel>
+
+        </Grid>
+           
+        <Grid Grid.Column="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="Auto"/>
@@ -49,23 +72,8 @@
 
 
         </Grid>
-        <Grid Grid.Column="1" Margin="100 0 100 0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <Image Source="C:\HomeWork\Exam_WPF\Exam_WPF\Recources\Logo_White.png" Height="100" Margin="80 10 80 0" />
-            <StackPanel Grid.Row="1" Orientation="Vertical" Height="Auto" Width="Auto">
-                <TextBlock Text="Login" Foreground="White" />
-                <TextBox Name ="Login_Field" Foreground="White" />
-                <TextBlock Text="Password" Foreground="White" />
-                <PasswordBox Name ="Password_Field" Foreground ="White"/>
-                <TextBlock Name="Error_Field" Foreground="Red" Text=""/>
-                <Button Content="Login" Click="Login_Button_Click" Margin="100 10 100 0"></Button>
-                <Button Content="Registration" Margin="100 10 100 0" Click="Registration_Button_Click"></Button>
-            </StackPanel>
-
-        </Grid>
+        <Button  Grid.Column="1" Name="Show_Button" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,156,16,0" Width="62" Height="32" FontSize="11" Click="ShowButton_Clicked">
+            Show
+        </Button>
     </Grid>
 </Window>
