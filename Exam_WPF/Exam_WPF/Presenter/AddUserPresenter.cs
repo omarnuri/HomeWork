@@ -19,11 +19,26 @@ public class AddUserPresenter
     }
     public void View_AddUserCalled(object? sender, UserViewAddEventArgs e)
     {
-        View.IsUserExist(Model.AddUser(e.User));
+        var user = e.User;
+        if (Model.AddUser(user))
+        {
+            View.ShowMessage(string.Empty);
+            View.Close();
+        }
+        else
+        {
+            View.ShowMessage("Sorry, this login's already exists. Please, try another one");
+        }
+        
     }
-    void Show()
+    public void Show()
     {
         View.Show();
+
+    }
+    public void ShowDialog()
+    {
+        View.ShowDialog();
     }
 
 }

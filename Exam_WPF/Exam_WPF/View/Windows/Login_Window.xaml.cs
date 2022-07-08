@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Exam_WPF.View;
 using Exam_WPF.View.Windows;
+using System.Windows.Threading;
+using System.Runtime.CompilerServices;
+using System.ComponentModel;
 using Exam_WPF;
 
 namespace Exam_WPF
@@ -21,34 +24,62 @@ namespace Exam_WPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Login_Window : Window, IUserView
+    public partial class Login_Window : Window, IUserView, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        private float _Angle;
+        public float Angle { get { return _Angle; } set {
+                if(_Angle != value)
+                {
+                    _Angle = value;
+                    this.OnPropertChanged();
+                }
+            }
+        }
+        
+
+        private void OnPropertChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
         public Login_Window()
         {
+            DataContext = this;
             InitializeComponent();
-            
+           
+
         }
-        public void ViewUser(User user)
+        public void ShowMessage(string message)
         {
-            if (user == null)
-            {
-                Error_Field.Text = "Пароль или Логин введены не правильно!";
-            }
-            else
-            {
-                
-                WorkSpace_Window window = new(user);
-                window.Show();
-                this.Close();
-            }
+            Error_Field.Text = message;
+        }
+        private void WindowLoaded(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer dt = new();
+            dt.Interval = TimeSpan.FromMilliseconds(1);
+            dt.Tick += dtTicker;
+            dt.Start();
+        }
+        private void dtTicker(object sender, EventArgs e)
+        {
+            Angle += 0.10f;
+
+        }
+        public void Close()
+        {
+            this.Close();
         }
         private void Registration_Button_Click(object sender, RoutedEventArgs e)
         {
             AddUserCalled?.Invoke(this, EventArgs.Empty);
-            
+
         }
         public event EventHandler<UserViewEventArguments> GetUserCalled;
         public event EventHandler<EventArgs> AddUserCalled;
+        public event EventHandler<EventArgs> UserCloseCalled;
+
+
+
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             User user = new();
@@ -67,7 +98,7 @@ namespace Exam_WPF
                 Login_Button.IsEnabled = false;
             }
             Password_Field_Text.Text = Password_Field.Password;
-            
+
         }
         private void Login_Field_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -94,8 +125,10 @@ namespace Exam_WPF
                 Password_Field_Text.Visibility = Visibility.Visible;
                 Show_Button.Content = "Hide";
             }
-            
+
         }
+
+       
        
     }
 }

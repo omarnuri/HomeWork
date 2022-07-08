@@ -7,7 +7,7 @@ using System.Text.Json;
 using System.IO;
 public class UserBaseModel:IUserModel
 {
-    public List<User?> _users { get; set; }
+    public List<User> _users { get; set; } = new();
     public User CurrentUser { get; set; }
     public User? GetUser(string Login, string Password)
     {
@@ -22,14 +22,10 @@ public class UserBaseModel:IUserModel
     }
     public UserBaseModel()
     {
-        _users = new List<User>();
-        User admin = new User();
-        admin.Login = "Admin";
-        admin.Name = "Admin";
-        admin.Surename = "Admin";
-        admin.Password = "Admin";
-        _users.Add(admin);
-        //_users = JsonSerializer.Deserialize<List<User>>(File.ReadAllText(@"C:\HomeWork\Exam_WPF\Exam_WPF\Recources\Users.json"));
+        if (JsonSerializer.Deserialize<List<User>>(File.ReadAllText(@"C:\HomeWork\Exam_WPF\Exam_WPF\Recources\Users.json")) != null)
+        {
+            _users = JsonSerializer.Deserialize<List<User>>(File.ReadAllText(@"C:\HomeWork\Exam_WPF\Exam_WPF\Recources\Users.json"));
+        }
     }
     public bool IsExsist(User user)
     {
@@ -47,6 +43,7 @@ public class UserBaseModel:IUserModel
         if (!IsExsist(user))
         {
             _users.Add(user);
+            File.WriteAllText(@"C:\HomeWork\Exam_WPF\Exam_WPF\Recources\Users.json", JsonSerializer.Serialize(_users)); 
             return true;
         }
         return false;

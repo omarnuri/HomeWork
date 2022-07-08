@@ -16,18 +16,18 @@ namespace Exam_WPF.View
     /// <summary>
     /// Логика взаимодействия для Registration_Windows.xaml
     /// </summary>
-    public partial class Registration_Windows : Window,IUserViewAdd 
+    public partial class Registration_Windows : Window, IUserViewAdd
     {
         public Registration_Windows()
         {
             InitializeComponent();
 
         }
-        public void IsUserExist (bool isUserExis )
+        public void IsUserExist(bool isUserExis)
         {
             if (isUserExis)
             {
-                Error_Message_Text.Text = "Такой логин уже существуюет, попробуйте другой вариант!";
+                Error_Message_Text.Text = "This login's already exists, please try another one!";
             }
 
         }
@@ -42,8 +42,51 @@ namespace Exam_WPF.View
             user.Login = Reg_Login.Text;
             UserViewAdd?.Invoke(this, new UserViewAddEventArgs(user));
         }
-      
+        public void ShowMessage(string message)
+        {
+            Error_Message_Text.Text = message;
+        }
+        
+        void IUserViewAdd.ShowDialog()
+        {
+            ShowDialog();
+        }
 
-    
+        private void TextBoxChecker(object sender, TextChangedEventArgs e)
+        {
+            
+            foreach (var pb in Blocks.Children)
+            {
+                if (pb is TextBox && (pb as TextBox).Text == "")
+                {
+                   Reg_Button.IsEnabled = false;
+                   return;
+
+                }
+                Reg_Button.IsEnabled = true;
+
+            }
+        }
+
+        private void HideShowButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Reg_Password_hidden.Visibility == Visibility.Hidden)
+            {
+                Reg_Password_hidden.Visibility = Visibility.Visible;
+                Reg_Password.Visibility = Visibility.Hidden;
+                (sender as Button).Content = "Show";
+            }
+            else
+            {
+                Reg_Password_hidden.Visibility = Visibility.Hidden;
+                Reg_Password.Visibility = Visibility.Visible;
+                (sender as Button).Content = "Hide";
+            }
+        }
+
+        private void Reg_Password_hidden_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            Reg_Password.Text = (sender as PasswordBox).Password;
+        }
     }
 }

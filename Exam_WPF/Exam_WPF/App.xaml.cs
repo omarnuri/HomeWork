@@ -26,8 +26,6 @@ namespace Exam_WPF
             var userPresenter = new UserPresenter(userModel, userView);
            
             
-            this.MainWindow = userView;
-            this.MainWindow.Show();
             ServiceLocator.Instance.Add(
                     () => { 
                         return userPresenter; 
@@ -38,11 +36,22 @@ namespace Exam_WPF
                         var addUserView = new Registration_Windows();
                         var addUserPresenter = new AddUserPresenter(userModel, addUserView);
                         return addUserPresenter;
-
-                       
+      
                     }
                     );
-            
+            ServiceLocator.Instance.Add(
+                   () => {
+                       var WorkSpaceModel = new WorkSpaceModel();
+                       var WorkSpaceView = new WorkSpace_Window(userPresenter._user);
+                       var WorkSpacePresenter = new WorkSpacePresenter(WorkSpaceModel, WorkSpaceView);
+                       this.MainWindow = WorkSpaceView;
+                       return WorkSpacePresenter;
+
+                   }
+                   );
+
+            this.MainWindow = userView;
+            this.MainWindow.Show();
 
 
 

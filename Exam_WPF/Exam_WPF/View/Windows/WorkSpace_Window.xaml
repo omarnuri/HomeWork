@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exam_WPF.View.Windows"
         mc:Ignorable="d"
-        Title="WorkSpace_Window" Height="450" Width="800">
+        Title="WorkSpace_Window" Height="450" Width="800" Closing="Window_Closing" Background="#0B132B">
     <Grid>
-        <TextBlock Width="100" Height="100" Name="User_Name"></TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="1" BorderBrush="White">
+            <Menu VerticalAlignment="Top" Margin="0 0 -35 0" Foreground="White" Height="39">
+                <MenuItem Header="Client" >
+                </MenuItem>
+                <MenuItem Header="Order">
+                    <MenuItem/>
+                </MenuItem>
+                <MenuItem Header="Product">
+                    <MenuItem/>
+                </MenuItem>
+                <MenuItem Header="LogOut" Click="MenuLogOut_Click">
+                </MenuItem>
+            </Menu>
+        </Border>
+        <Grid Grid.Row="1">
+            
+            <ListBox Grid.Row="1"></ListBox>
+        </Grid>
     </Grid>
 </Window>

@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 public class Storage
 {
-    List<Product> products;
+    public List<Product>products = new();
+    public void Sell(string Name)
+    {
+        for (int i = 0; i < products.Count; i++)
+        {
+            if (products[i].name == Name)
+            {
+                products[i].count--;
+                if (products[i].count == 0)
+                {
+                    products.RemoveAt(i);
+                }
+            }
+        }
+    }
+    public void AddProduct(Product product)
+    {
+        products.Add(product);
+    }
+
 
 }
 

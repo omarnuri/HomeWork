@@ -5,19 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exam_WPF.View"
         mc:Ignorable="d"
-        Title="Registration_Windows" Height="450" Width="800">
+        Title="Registration_Windows" Height="270" Width="330" Background="#0B132B">
     <Grid>
-        <StackPanel>
-            <TextBlock Text="Name"/>
-            <TextBox x:Name ="Reg_Name"/>
-            <TextBlock Text="Surename"/>
-            <TextBox x:Name="Reg_SureName"/>
-            <TextBlock Text="Login"/>
-            <TextBox x:Name="Reg_Login"/>
-            <TextBlock Text="Password"/>
-            <TextBox x:Name="Reg_Password"/>
-            <TextBlock Text="" Foreground="Red" Name ="Error_Message_Text"/> 
-            <Button Click="Register_Click" Cursor="Hand"/>
+        <StackPanel Name="Blocks" Height="Auto" Width="Auto" >
+            <TextBlock Text="Name" Foreground="White"/>
+            <TextBox x:Name ="Reg_Name" TextChanged="TextBoxChecker" Cursor="Arrow" Foreground="White" />
+            <TextBlock Text="Surename" Foreground="White" />
+            <TextBox x:Name="Reg_SureName" TextChanged="TextBoxChecker" Foreground="White"/>
+            <TextBlock Text="Login" Foreground="White"/>
+            <TextBox x:Name="Reg_Login" TextChanged="TextBoxChecker" Foreground="White"/>
+            <TextBlock Text="Password" Foreground="White"/>
+            <TextBox x:Name="Reg_Password" TextChanged="TextBoxChecker" Foreground="White" Visibility="Hidden" Text="{Binding ElementName = Reg_Password_hidden, Path = Password, Mode=TwoWay}"/>
+            <PasswordBox Margin="0 -25 53 0" Name ="Reg_Password_hidden" Foreground="White" Visibility="Visible" Cursor="Arrow" PasswordChanged="Reg_Password_hidden_PasswordChanged"></PasswordBox>
+            <TextBlock Text="" Foreground="Red" Name ="Error_Message_Text" />
+            <Button Click="Register_Click" Cursor="Hand" Name="Reg_Button" IsEnabled="False"  HorizontalAlignment="Center" Width="100" Margin="0 10 0 0" Content="JOIN US!"/>
+
         </StackPanel>
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 131 0 0" Content="Show" FontSize="10" Cursor="Hand" Click ="HideShowButton_Click"></Button>
     </Grid>
 </Window>

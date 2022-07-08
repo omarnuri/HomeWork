@@ -9,10 +9,9 @@ public class ServiceLocator
     {
         _dependencies = new();
     }
-
     public T? Get<T>() where T : class
     {
-        if (_dependencies.TryGetValue(typeof(T), out var factory))
+        if (!_dependencies.TryGetValue(typeof(T), out var factory))
         {
             throw new KeyNotFoundException();
         }

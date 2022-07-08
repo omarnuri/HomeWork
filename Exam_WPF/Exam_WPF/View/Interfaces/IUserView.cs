@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public interface IUserView
+public interface IUserView:IView
 {
+   
     public event EventHandler<EventArgs> AddUserCalled;
     public event EventHandler<UserViewEventArguments> GetUserCalled;
-    public void ViewUser(User user);
+    
+   
+    public void ShowMessage(string message);
 
+    
 }

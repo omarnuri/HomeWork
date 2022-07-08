@@ -17,15 +17,29 @@ namespace Exam_WPF.View.Windows
     /// <summary>
     /// Логика взаимодействия для WorkSpace_Window.xaml
     /// </summary>
-    public partial class WorkSpace_Window : Window
+    public partial class WorkSpace_Window : Window, IWorkSpaceView
     {
         public User User { get; set; }
         public WorkSpace_Window(User user)
         {
             InitializeComponent();
             User = user;
-            User_Name.Text = user.Name;
-            
+        
+
+        }
+        public event EventHandler<EventArgs> WorkSpaceLoguot;
+
+        public event EventHandler<WorkSpaceView> WorkSpace;
+      
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+
+        }
+
+        private void MenuLogOut_Click(object sender, RoutedEventArgs e)
+        {
+           WorkSpaceLoguot?.Invoke(this, EventArgs.Empty);
         }
     }
 }
