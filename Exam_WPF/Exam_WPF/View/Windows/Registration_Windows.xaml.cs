@@ -87,6 +87,7 @@ namespace Exam_WPF.View
         private void Reg_Password_hidden_PasswordChanged(object sender, RoutedEventArgs e)
         {
             Reg_Password.Text = (sender as PasswordBox).Password;
+            
         }
     }
 }

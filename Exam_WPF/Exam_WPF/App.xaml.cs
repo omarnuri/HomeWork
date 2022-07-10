@@ -44,7 +44,6 @@ namespace Exam_WPF
                        var WorkSpaceModel = new WorkSpaceModel();
                        var WorkSpaceView = new WorkSpace_Window(userPresenter._user);
                        var WorkSpacePresenter = new WorkSpacePresenter(WorkSpaceModel, WorkSpaceView);
-                       this.MainWindow = WorkSpaceView;
                        return WorkSpacePresenter;
 
                    }

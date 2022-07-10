@@ -9,6 +9,7 @@ public class UserPresenter
 {
     IUserView View;
     IUserModel Model;
+   
     public event EventHandler<EventArgs> WorkSpaseCalled;
     public User _user = new();
     public UserPresenter(IUserModel model, IUserView view)
@@ -16,7 +17,8 @@ public class UserPresenter
         View = view;
         Model = model;
         View.GetUserCalled += View_ShowUserCalled;
-        view.AddUserCalled += View_AddUserCalled;
+        View.AddUserCalled += View_AddUserCalled;
+        
     }
      private void View_AddUserCalled(object? sender, EventArgs e)
     {
@@ -33,17 +35,24 @@ public class UserPresenter
         }
         else
         {
-            _user = User;
-            var presenter = ServiceLocator.Instance.Get<AddUserPresenter>();
-            View.ShowMessage(string.Empty);
-            View_WorkSpaceCalled();
+            View.dtStop();
             View.Hide();
+            View.ShowMessage(string.Empty);
+            var presenter = ServiceLocator.Instance.Get<AddUserPresenter>();
+            _user = User;
+            View_WorkSpaceCalled();
             
         }
         }
     private void View_WorkSpaceCalled()
     {
+        
         var presenter = ServiceLocator.Instance.Get<WorkSpacePresenter>();
+        View.ClearFields();
         presenter?.Show();
+    }
+    public void Show() {
+        View.dtStart();
+        View.Show(); 
     }
 }

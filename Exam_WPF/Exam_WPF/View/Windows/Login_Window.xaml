@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:Exam_WPF"
         mc:Ignorable="d"
-        Title="KAKASHKA Co." Height="420" Width="800" Background="#0B132B" MaxHeight="430" Loaded="WindowLoaded">
+        Title="KAKISH Co." Height="420" Width="800" Background="#0B132B" MaxHeight="430" Loaded="WindowLoaded" Closing="Window_Closing">
   
     <Grid>
         
@@ -88,8 +89,8 @@
                 <TextBox Foreground="White" Name="Password_Field_Text"  Visibility="Hidden" Margin="0 0 0 -25" Text="{Binding ElementName=Password_Field, Path=Password, Mode=TwoWay}"></TextBox>
                 <PasswordBox Name ="Password_Field" Foreground ="White" PasswordChanged="Password_Field_PasswordChanged" Cursor="Arrow"/>
                 <TextBlock Name="Error_Field" Foreground="Red" Text=""/>
-                <Button IsEnabled="False" Content="Login" Click="Login_Button_Click" Name ="Login_Button" Margin="100 10 100 0"></Button>
-                <Button Content="Registration" Margin="100 10 100 0" Click="Registration_Button_Click"></Button>
+                <Button IsEnabled="False" Content="Login" Click="Login_Button_Click" Name ="Login_Button" Margin="100 10 100 0" Cursor="Hand"></Button>
+                <Button Content="Registration" Margin="100 10 100 0" Click="Registration_Button_Click" Cursor="Hand"></Button>
             </StackPanel>
 
         </Grid>

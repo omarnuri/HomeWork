@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "niNVQEhRhwpinLE+Jzn0enisBahjbHOpYrlAthZzfnIxeAiUx3TR4j/5snH6arA3nkW4oWAOm8LAnsKq5Qm6Ow==",
+  "dgSpecHash": "g9fXiwCLW1TQCRfYSxVLz38exHFCV5QKpapILUMTlR0ply1D4jgLqsX5q1EGjXIVG1/UA2dwAkkm2su/+Np6sw==",
   "success": true,
   "projectFilePath": "C:\\HomeWork\\Exam_WPF\\Services\\Services.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\omark\\.nuget\\packages\\extended.wpf.toolkit\\4.3.0\\extended.wpf.toolkit.4.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Extended.Wpf.Toolkit 4.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

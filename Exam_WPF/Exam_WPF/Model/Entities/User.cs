@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 public class User
 {
-    List<Product> products { get; set; } = new();
-    List<Client> clients { get; set; } = new();
     public string Name { get; set; } = string.Empty;
     public string Login { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;

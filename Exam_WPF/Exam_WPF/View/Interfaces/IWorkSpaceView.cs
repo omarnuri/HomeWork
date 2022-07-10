@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 public interface IWorkSpaceView:IView
 {
-    event EventHandler<WorkSpaceView> WorkSpace;
     public event EventHandler<EventArgs> WorkSpaceLoguot;
+    public event EventHandler<ClientAddEventArgs> ClientAdd;
+    public event EventHandler<ClientLoadEventArgs> ClientLoadEvent;
 }

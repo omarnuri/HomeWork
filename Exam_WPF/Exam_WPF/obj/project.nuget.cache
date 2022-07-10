@@ -1,11 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "K9JjBL049u/JYRY6+nOWG+fgHAqmn1eJDRH7ZRHiN9vRLtOcTysTlVXNEu75DMc6UnVNMs5+QI/YvrzMU4Mzmg==",
+  "dgSpecHash": "R3yrzvV3z6t1Qj1MwQNnWy18eb4SKPZ3Xwbw3I4NKeQuyUH0B57Ag1S3ilX5+zLKuMspnlr95orxIUJTxg5PEQ==",
   "success": true,
   "projectFilePath": "C:\\HomeWork\\Exam_WPF\\Exam_WPF\\Exam_WPF.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\omark\\.nuget\\packages\\extended.wpf.toolkit\\4.3.0\\extended.wpf.toolkit.4.3.0.nupkg.sha512",
     "C:\\Users\\omark\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
     "C:\\Users\\omark\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Extended.Wpf.Toolkit 4.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

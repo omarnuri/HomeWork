@@ -10,9 +10,9 @@ public interface IUserView:IView
    
     public event EventHandler<EventArgs> AddUserCalled;
     public event EventHandler<UserViewEventArguments> GetUserCalled;
-    
-   
     public void ShowMessage(string message);
-
+    public void ClearFields();
+    public void dtStop();
+    public void dtStart();
     
 }

@@ -36,7 +36,7 @@ namespace Exam_WPF
                 }
             }
         }
-        
+        DispatcherTimer dt = new();
 
         private void OnPropertChanged([CallerMemberName] string propertyName = null)
         {
@@ -55,9 +55,18 @@ namespace Exam_WPF
         }
         private void WindowLoaded(object sender, RoutedEventArgs e)
         {
-            DispatcherTimer dt = new();
+           
             dt.Interval = TimeSpan.FromMilliseconds(1);
             dt.Tick += dtTicker;
+            dt.Start();
+           
+        }
+        public void dtStop()
+        {
+            dt.Stop();
+        }
+        public void dtStart()
+        {
             dt.Start();
         }
         private void dtTicker(object sender, EventArgs e)
@@ -65,10 +74,8 @@ namespace Exam_WPF
             Angle += 0.10f;
 
         }
-        public void Close()
-        {
-            this.Close();
-        }
+
+        
         private void Registration_Button_Click(object sender, RoutedEventArgs e)
         {
             AddUserCalled?.Invoke(this, EventArgs.Empty);
@@ -76,10 +83,7 @@ namespace Exam_WPF
         }
         public event EventHandler<UserViewEventArguments> GetUserCalled;
         public event EventHandler<EventArgs> AddUserCalled;
-        public event EventHandler<EventArgs> UserCloseCalled;
-
-
-
+       
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             User user = new();
@@ -127,8 +131,16 @@ namespace Exam_WPF
             }
 
         }
-
-       
-       
+        public  void ClearFields() 
+        {
+        Password_Field_Text.Clear();
+        Password_Field.Clear();
+        Login_Field.Clear();
+        }
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+     
     }
 }
