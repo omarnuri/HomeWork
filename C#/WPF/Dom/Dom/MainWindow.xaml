@@ -1,0 +1,152 @@
+﻿<Window x:Class="Dom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dom"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="825">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height ="1.5*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Fill="#0d5391"></Rectangle>
+        <Image Source= "C:\HomeWork\Dom\Dom\Resources\Hero_BG.png" Stretch="UniformToFill"></Image>
+        <DockPanel Grid.Row="0">
+            <TextBlock DockPanel.Dock="Top" FontSize="15" Foreground="White" FontFamily="Microsoft JhengHei UI" FontWeight="Normal" Margin="10 5 0 0">Introducing new approach to learning</TextBlock>
+            <TextBlock xml:space="preserve" Foreground="White"
+>   Hands-on training that helps you advance your career and earn your sot at the top
+            </TextBlock>
+        </DockPanel>
+        <DockPanel Grid.Row="1">
+            <TextBlock DockPanel.Dock="Top" FontSize="20" FontFamily="Microsoft JhengHei UI" FontWeight="Bold">Microsoft Docks</TextBlock>
+            <TextBlock xml:space="preserve"
+>docs.microsoft.com is the home for Microsoft documentation for end users, developers, and IT proffesionals.
+Check out our quickstarts, tutorials, API, reference, and code examples
+            </TextBlock>
+        </DockPanel>
+        <WrapPanel Grid.Row="2" Orientation="Horizontal">
+            <Button Width="200" Height="60" Background="#0078d7">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="/Resources/windows-logo-silhouette.png" Margin="-19,19,0,19" HorizontalAlignment="Left" Width="21" />
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Grid.ColumnSpan="2" Foreground="White" Height="18" Width="82" FontSize="15">Windows</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#3598db" Margin="3 0 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="C:\HomeWork\Dom\Dom\Resources\azure.png" Margin="-27,15,0,14" HorizontalAlignment="Left" Width="26" />
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Grid.ColumnSpan="2" Foreground="White" Height="18" Width="82" FontSize="15">Azure</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#5c2c8f" Margin="3 0 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="C:\HomeWork\Dom\Dom\Resources\visualstudio.ico" Margin="-31,14,0,12" HorizontalAlignment="Left" Width="30" />
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Grid.ColumnSpan="2" Foreground="White" Height="18" Width="82" FontSize="15">Visual Studio</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#d73b02" Margin="3 0 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="C:\HomeWork\Dom\Dom\Resources\office.png" Margin="-19,19,0,19" HorizontalAlignment="Left" Width="21" />
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Grid.ColumnSpan="2" Foreground="White" Height="18" Width="82" FontSize="15">Office</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#6833a5" Margin="0 3 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Grid.ColumnSpan="2" Foreground="White" Height="18" Width="82" FontSize="15">ASP.NET</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#e81123" Margin="3 3 0 0">
+                <Grid RenderTransformOrigin="0.953,0.295">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,2,0,0" Foreground="White" Height="18" Width="82" FontSize="15" Grid.Column="1">SQL</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#117b0f" Margin="3 3 0 0">
+                <Grid RenderTransformOrigin="0.953,0.295">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" Height="18" FontSize="15" Grid.Column="1" HorizontalAlignment="Right" Width="188">Enterprice Mobility+Security</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#165078" Margin="3 0 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="C:\HomeWork\Dom\Dom\Resources\nuget-logo-big.png" Margin="-31,14,0,13" HorizontalAlignment="Left" Width="43" />
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Grid.ColumnSpan="2" Foreground="White" Height="18" Width="82" FontSize="15">Nuget</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#3598db" Margin="0 3 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="C:\HomeWork\Dom\Dom\Resources\xamarin.png" Margin="-38,15,0,13" HorizontalAlignment="Left" Width="34" />
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Grid.ColumnSpan="2" Foreground="White" Height="18" Width="82" FontSize="15">Xamarin</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#e6008d" Margin="3 3 0 0">
+                <Grid RenderTransformOrigin="0.953,0.295">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" Height="18" FontSize="15" Grid.Column="1" HorizontalAlignment="Left" Width="188" Margin="36,0,0,0">Azure Bot Service</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#00204f" Margin="3 3 0 0">
+                <Grid RenderTransformOrigin="0.953,0.295">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" Height="18" FontSize="15" Grid.Column="1" HorizontalAlignment="Left" Width="188" Margin="36,0,0,0">Systeme Centre</TextBlock>
+                </Grid>
+            </Button>
+            <Button Width="200" Height="60" Background="#32145a" Margin="3 3 0 0">
+                <Grid RenderTransformOrigin="0.953,0.295">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" Height="18" FontSize="15" Grid.Column="1" HorizontalAlignment="Left" Width="188" Margin="36,0,0,0">Microsoft Education </TextBlock>
+                </Grid>
+            </Button>
+
+
+
+        </WrapPanel>
+    </Grid>
+
+
+</Window>

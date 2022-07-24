@@ -1,0 +1,29 @@
+﻿<Window x:Class="TextRedactor.HotKeys_ModalWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextRedactor"
+        mc:Ignorable="d"
+        Title="HotKeys_ModalWin" Height="300" Width="170">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="20">File</TextBlock>
+            <TextBlock FontSize="12">New File - Ctrl+N</TextBlock>
+            <TextBlock FontSize="12">Open File - Ctrl+O</TextBlock>
+            <TextBlock FontSize="12">Save File - Ctrl+S</TextBlock>
+            <TextBlock FontSize="12">Close Programm - Ctrl+E</TextBlock>
+            <TextBlock FontSize="12">Print File - Ctrl+P</TextBlock>
+            <TextBlock FontSize="20">Format</TextBlock>
+            <TextBlock FontSize="12">Word Wrap - Ctrl+W</TextBlock>
+            <TextBlock FontSize="12">Text's Color - Ctrl+B</TextBlock>
+            <TextBlock FontSize="12">Texts's Font - Ctrl+F</TextBlock>
+            <TextBlock FontSize="20">Help</TextBlock>
+            <TextBlock FontSize="12">About - Ctrl+I</TextBlock>
+            <TextBlock FontSize="12">Hotkey info - Ctrl+M</TextBlock>
+            
+            
+
+        </StackPanel>
+    </Grid>
+</Window>

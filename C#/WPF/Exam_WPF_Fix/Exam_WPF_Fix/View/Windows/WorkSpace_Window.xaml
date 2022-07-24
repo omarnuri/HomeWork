@@ -1,0 +1,298 @@
+﻿<Window x:Class="Exam_WPF.View.Windows.WorkSpace_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+    xmlns:local="clr-namespace:Exam_WPF.View.Windows"
+        mc:Ignorable="d"
+        Title="WorkSpace_Window" Height="450" Width="800" Closing="Window_Closing" Background="#0B132B" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Storyboard x:Key="MenuFieldWidtAnim" Completed="MenuAnim_Completed">
+            <DoubleAnimation Duration="00:00:1" From="0" To="1" Storyboard.TargetName="HelloText" Storyboard.TargetProperty="Opacity"/>
+            <DoubleAnimation Duration="00:00:1" From="0" To="39" Storyboard.TargetName="Menu_Field" Storyboard.TargetProperty="Height"/>
+
+        </Storyboard>
+        <Storyboard x:Key="MenuFieldFindAnim">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="Margin" Storyboard.TargetName="FindElemBorder" BeginTime="00:00:00">
+                    <SplineThicknessKeyFrame KeyTime="00:00:00" Value="200 0 0 0" />
+                    <SplineThicknessKeyFrame KeyTime="00:00:01" Value="0 0 0 0" />
+                </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+
+            <Storyboard x:Key="HelloTextOpacityEnd">
+            <DoubleAnimation Duration="00:00:3" From="1" To="0" Storyboard.TargetName="HelloText" Storyboard.TargetProperty="Opacity"/>
+        </Storyboard>
+    </Window.Resources><!--anim-->
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="HelloText" Opacity="0" FontSize="100" Foreground="White" TextTrimming="CharacterEllipsis" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border BorderThickness="1" BorderBrush="White" Grid.Column="1" Name="FindElemBorder" Margin="200 0 0 0"  Visibility="Hidden">
+                <TextBox Name ="FindField"></TextBox>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="White" Margin="0 0 -200 0" Name = "FindBorder">
+                <Menu VerticalAlignment="Top" Margin="0 0 -35 0" Foreground="White" Height="0" Name="Menu_Field">
+                    <MenuItem Header="Client" Click ="MenuItemClient_Click"/>
+                    <MenuItem Header="Order" Click="MenuItemOrder_Click"/>
+                    <MenuItem Header="Product" Click="MenuItemProduct_Click"/>
+                    <MenuItem Header="LogOut" Click="MenuLogOut_Click"/>
+                </Menu>
+            </Border>
+            <!--menu-->
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" x:Name="input_field"/>
+                <ColumnDefinition Width="0*" Name="show_field"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" BorderThickness="1" BorderBrush="White" Name = "show_field_Border">
+                <Grid Name="show_field_Elements" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Name="show_field_Clients" Visibility="Hidden">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="ClientNameButton" Height="50" Grid.Row="0" Grid.Column="0" Content="Имя"></Button>
+                        <Button x:Name="ClientSureNameButton" Height="50" Grid.Row="0" Grid.Column="1" Content="Фамилия"></Button>
+                        <Button x:Name="ClientPhoneButton" Height="50" Grid.Row="0" Grid.Column="2" Content="Тел. Номер"></Button>
+                        <Button x:Name="ClientMailButton" Height="50" Grid.Row="0" Grid.Column="3" Content="Почта"></Button>
+                        <Button x:Name="ClientAdressButton" Height="50" Grid.Row="0" Grid.Column="4" Content="Адресс"></Button>
+                        <GridSplitter Grid.Column="0" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <GridSplitter Grid.Column="1" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <GridSplitter Grid.Column="2" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <GridSplitter Grid.Column="3" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <ListBox Grid.Row="1" Grid.Column="0" x:Name="ClientNameListBox" ItemsSource="{Binding Clients}"  Foreground="White">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"></TextBlock>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="1" Name ="ClientSureNameListBox" Foreground="White" ItemsSource="{Binding Clients}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding SureName}"></TextBlock>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="2" Name ="ClientPhoneListBox"  Foreground="White" ItemsSource="{Binding Clients}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding PhoneNumber}"></TextBlock>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="3" Name ="ClientMailListBox" Foreground="White" ItemsSource="{Binding Clients}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Email}"></TextBlock>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="4" Name ="ClientAdressListBox" Foreground="White" ItemsSource="{Binding Clients}" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Adress}"></TextBlock>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+
+                    </Grid>
+                    <Grid Name="show_field_Product" Visibility="Hidden">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="ProductNameButton" Height="50" Grid.Row="0" Grid.Column="0" Content="Имя" Cursor="Hand"></Button>
+                        <Button x:Name="ProductPrice" Height="50" Grid.Row="0" Grid.Column="1" Content="Цена"></Button>
+                        <Button x:Name="ProductCount" Height="50" Grid.Row="0" Grid.Column="2" Content="Кол-во"></Button>
+                        <Button x:Name="ProductDescriptionButton" Height="50" Grid.Row="0" Grid.Column="3" Content="Описание" Cursor="Hand"></Button>
+                        <GridSplitter Grid.Column="0" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <GridSplitter Grid.Column="1" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <GridSplitter Grid.Column="2" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <ListBox Grid.Row="1" Grid.Column="0" x:Name="ProductNameListBox"  Foreground="White" ItemsSource="{Binding Products}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="1" Name ="ProductPriceListBox" Foreground="White"
+                            ItemsSource="{Binding Products}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Price}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="2" Name ="ProductCountListBox" Foreground="White" ItemsSource="{Binding Products}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Count}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="3" Name ="ProductDescriptionListBox" Foreground="White" ItemsSource="{Binding Products}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Description}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                    <Grid Name="show_field_Order" Visibility="Hidden">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="OrderClientNameButton" Height="50" Grid.Row="0" Grid.Column="0" Content="Имя"></Button>
+                        <Button x:Name="OrderProductNameButton" Height="50" Grid.Row="0" Grid.Column="1" Content="Товар"></Button>
+                        <Button x:Name="OrderProductCountButton" Height="50" Grid.Row="0" Grid.Column="2" Content="Кол-во"></Button>
+                        <Button x:Name="OrderDateButton" Height="50" Grid.Row="0" Grid.Column="3" Content="Дата"></Button>
+                        <GridSplitter Grid.Column="0" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <GridSplitter Grid.Column="1" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <GridSplitter Grid.Column="2" Grid.RowSpan="2" Width="5" Height="Auto"/>
+                        <ListBox Grid.Row="1" Grid.Column="0" x:Name="OrderClientNameListBox"  Foreground="White" ItemsSource="{Binding Orders}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding ClientName}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="1" Name ="OrderProductNameListBox" Foreground="White" ItemsSource="{Binding Orders}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding ProductName}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="2" Name ="OrderProductCountListBox" Foreground="White" ItemsSource="{Binding Orders}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Count}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox Grid.Row="1" Grid.Column="3" Name ="OrderDateListBox" Foreground="White" ItemsSource="{Binding Orders}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Date}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                </Grid>
+            </Border>
+            <!--show-->
+
+            <Border Grid.Column="1"  BorderThickness="1" BorderBrush="White" Name="input_field_Border">
+                <Grid Name ="input_field_Elements" Background="#219ebc">
+                    <Grid   Name="input_ClientField" Visibility="Hidden">
+                        <StackPanel Margin="5 10 5 10">
+                            <TextBlock Text="Название"/>
+                            <TextBox x:Name="ClientNameTextBox" TextChanged="TextChanged" Cursor="Arrow"/>
+                            <TextBlock Text="Фамилия"/>
+                            <TextBox x:Name="ClientSureNameTextBox" TextChanged="TextChanged"/>
+                            <TextBlock Text="Телефон" />
+                            <TextBox FontSize="20" Name="ClientPhoneNumber"  Background="#219ebc" BorderThickness="0" TextChanged="TextChanged"/>
+                            <TextBlock Text="Почта"/>
+                            <TextBox Name="ClientEmailTextBox" TextChanged="TextChanged"/>
+                            <TextBlock Text="Адресс"/>
+                            <TextBox x:Name="ClientAdressTextBox" TextChanged="TextChanged"/>
+                            <Button Name="ClientAddButton" Margin="0 10 0 0" IsEnabled="False" Click="ClientAddButton_Click" >Add</Button>  
+
+
+                        </StackPanel>
+
+                    </Grid>
+                    <Grid  Name="input_ProductField" Visibility="Hidden" >
+                        <StackPanel Margin="5 10 5 10">
+                            <TextBlock Text="Название"/>
+                            <TextBox x:Name="ProductNameTextBox" TextChanged="TextChanged" />
+                            <TextBlock Text="Цена"/>
+                            <TextBox x:Name="ProductPriceTextBox" TextChanged="TextChanged" PreviewTextInput="PreviewTextInput_OnlyValue"/>
+                            <TextBlock Text="Кол-во"/>
+                            <TextBox  x:Name="ProductCountTextBox"  Background="#219ebc" BorderBrush="Black" BorderThickness="1" TextChanged="TextChanged"/>
+                            <TextBlock Text="Описание"/>
+                            <TextBox x:Name="ProductDescriptionTextBox" TextChanged="TextChanged"/>
+                            <Button Name="ProductAddButton" IsEnabled="False" Margin="0 10 0 0"  Cursor="Hand" Click="ProductAddButton_Click">Add</Button>
+
+
+                        </StackPanel>
+
+                    </Grid>
+                    <Grid  Name="input_OrderField" Visibility="Hidden" >
+                        <StackPanel Margin="5 10 5 10">
+                            <TextBlock Text="Имя"/>
+                            <ComboBox x:Name="OrderClientNameComboBox" SelectionChanged="DateChanged" ItemsSource ="{Binding Clients}">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name}"/>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                            <TextBlock Text="Продукт"/>
+                            <ComboBox x:Name="OrderProductNameComboBox" SelectionChanged="DateChanged" ItemsSource ="{Binding Products}">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name}"/>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                            <TextBlock Text="Кол-во" />
+                            <TextBox x:Name="OrderProductCountTextBox" Background="#219ebc" BorderBrush="Black" BorderThickness="1" TextChanged="TextChanged"/>
+                            <TextBlock Text="Дата Покупки"/>
+                            <DatePicker x:Name="OrderProductDatePicker" SelectedDateChanged="DateChanged" Focusable="False"/>
+                            <Button Name="OrderAddButton" IsEnabled="False" Margin="0 10 0 0" Click="OrderAddButton_Click" Cursor="Hand">Add</Button>
+                            
+
+
+                        </StackPanel>
+
+                    </Grid>
+                    
+                </Grid>
+            </Border>
+            <!--Input-->
+            <GridSplitter  Width="2" BorderBrush="White" Visibility="{Binding ElementName=input_field_Border, Path=Visibility}"/>
+
+        </Grid><!--ShowInput-->
+
+
+
+    </Grid>
+</Window>

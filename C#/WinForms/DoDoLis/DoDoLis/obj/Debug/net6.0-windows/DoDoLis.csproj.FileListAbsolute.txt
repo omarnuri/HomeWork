@@ -1,0 +1,17 @@
+C:\HomeWork\DoDoLis\DoDoLis\bin\Debug\net6.0-windows\DoDoLis.exe
+C:\HomeWork\DoDoLis\DoDoLis\bin\Debug\net6.0-windows\DoDoLis.deps.json
+C:\HomeWork\DoDoLis\DoDoLis\bin\Debug\net6.0-windows\DoDoLis.runtimeconfig.json
+C:\HomeWork\DoDoLis\DoDoLis\bin\Debug\net6.0-windows\DoDoLis.dll
+C:\HomeWork\DoDoLis\DoDoLis\bin\Debug\net6.0-windows\DoDoLis.pdb
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.csproj.AssemblyReference.cache
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.csproj.GenerateResource.cache
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.GeneratedMSBuildEditorConfig.editorconfig
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.AssemblyInfoInputs.cache
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.AssemblyInfo.cs
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.csproj.CoreCompileInputs.cache
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.dll
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\refint\DoDoLis.dll
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.pdb
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.genruntimeconfig.cache
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\ref\DoDoLis.dll
+C:\HomeWork\DoDoLis\DoDoLis\obj\Debug\net6.0-windows\DoDoLis.Form1.resources

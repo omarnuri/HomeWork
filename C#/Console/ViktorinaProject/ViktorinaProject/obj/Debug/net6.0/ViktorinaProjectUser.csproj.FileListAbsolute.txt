@@ -1,0 +1,15 @@
+C:\HomeWork\ViktorinaProject\ViktorinaProject\bin\Debug\net6.0\ViktorinaProjectUser.exe
+C:\HomeWork\ViktorinaProject\ViktorinaProject\bin\Debug\net6.0\ViktorinaProjectUser.deps.json
+C:\HomeWork\ViktorinaProject\ViktorinaProject\bin\Debug\net6.0\ViktorinaProjectUser.runtimeconfig.json
+C:\HomeWork\ViktorinaProject\ViktorinaProject\bin\Debug\net6.0\ViktorinaProjectUser.dll
+C:\HomeWork\ViktorinaProject\ViktorinaProject\bin\Debug\net6.0\ViktorinaProjectUser.pdb
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.csproj.AssemblyReference.cache
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.AssemblyInfoInputs.cache
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.AssemblyInfo.cs
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.csproj.CoreCompileInputs.cache
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.dll
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\refint\ViktorinaProjectUser.dll
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.pdb
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ViktorinaProjectUser.genruntimeconfig.cache
+C:\HomeWork\ViktorinaProject\ViktorinaProject\obj\Debug\net6.0\ref\ViktorinaProjectUser.dll

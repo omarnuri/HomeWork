@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Работа с арифметикой и операторами/1.0.0": {
+        "runtime": {
+          "Работа с арифметикой и операторами.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Работа с арифметикой и операторами/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\HomeWork\PingTest\PingTest\bin\Debug\net6.0\PingTest.exe
+C:\HomeWork\PingTest\PingTest\bin\Debug\net6.0\PingTest.deps.json
+C:\HomeWork\PingTest\PingTest\bin\Debug\net6.0\PingTest.runtimeconfig.json
+C:\HomeWork\PingTest\PingTest\bin\Debug\net6.0\PingTest.dll
+C:\HomeWork\PingTest\PingTest\bin\Debug\net6.0\PingTest.pdb
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.csproj.AssemblyReference.cache
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.AssemblyInfoInputs.cache
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.AssemblyInfo.cs
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.csproj.CoreCompileInputs.cache
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.dll
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\refint\PingTest.dll
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.pdb
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\PingTest.genruntimeconfig.cache
+C:\HomeWork\PingTest\PingTest\obj\Debug\net6.0\ref\PingTest.dll

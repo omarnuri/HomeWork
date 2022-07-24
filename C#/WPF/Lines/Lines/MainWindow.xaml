@@ -1,0 +1,29 @@
+﻿<Window x:Class="Lines.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lines"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="500">
+    <DockPanel>
+        <Rectangle DockPanel.Dock="Left" Fill="#1abc9c" Width="80"></Rectangle>
+        <Rectangle DockPanel.Dock ="Bottom"  Fill="#2980b9" Height="83"></Rectangle>
+        <Rectangle DockPanel.Dock="Right" Fill="#9b59b6" Width="80"></Rectangle>
+        <Rectangle DockPanel.Dock="Top" Fill="#f1c40f" Height="80"></Rectangle>
+        <DockPanel>
+            <Rectangle DockPanel.Dock="Left" Fill="#e67e22" Width="80"></Rectangle>
+            <Rectangle DockPanel.Dock ="Bottom"  Fill="#e74c3c" Height="83"></Rectangle>
+            <Rectangle DockPanel.Dock="Right" Fill="#bdc3c7" Width="80"></Rectangle>
+            <Rectangle DockPanel.Dock="Top" Fill="#2980b9" Height="80"></Rectangle>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Rectangle  Fill="Black"></Rectangle>
+                <Rectangle Grid.Column ="1" Fill="#1abc9c"></Rectangle>
+            </Grid>
+        </DockPanel>
+    </DockPanel>
+</Window>
