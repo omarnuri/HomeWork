@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "H+46L+up3plVLstxol+BQ9fuTPsVxOjcbQn76UbYXo1SS/iJ9DR8T2A4nsq/+jK5JgYuBiNpmYpe2H8dYhh9ww==",
+  "dgSpecHash": "JyUMjOpnUeBpuZGnmrnpDXidyEW7A3NeJQ8EUaI55XIXb/KMczbVJm0Cze7OrCP7jkAHeCF/3TlUOy1PUkvUZw==",
   "success": true,
-  "projectFilePath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
+  "projectFilePath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\omark\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
-    "C:\\Users\\omark\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512"
+    "C:\\Users\\Asus\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

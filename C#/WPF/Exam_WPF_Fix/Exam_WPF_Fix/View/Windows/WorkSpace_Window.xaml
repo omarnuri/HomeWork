@@ -15,12 +15,11 @@
         </Storyboard>
         <Storyboard x:Key="MenuFieldFindAnim">
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="Margin" Storyboard.TargetName="FindElemBorder" BeginTime="00:00:00">
-                    <SplineThicknessKeyFrame KeyTime="00:00:00" Value="200 0 0 0" />
-                    <SplineThicknessKeyFrame KeyTime="00:00:01" Value="0 0 0 0" />
-                </ThicknessAnimationUsingKeyFrames>
+                <SplineThicknessKeyFrame KeyTime="00:00:00" Value="200 0 0 0" />
+                <SplineThicknessKeyFrame KeyTime="00:00:01" Value="0 0 0 0" />
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
-
-            <Storyboard x:Key="HelloTextOpacityEnd">
+        <Storyboard x:Key="HelloTextOpacityEnd">
             <DoubleAnimation Duration="00:00:3" From="1" To="0" Storyboard.TargetName="HelloText" Storyboard.TargetProperty="Opacity"/>
         </Storyboard>
     </Window.Resources><!--anim-->

@@ -5,10 +5,14 @@
       "MaterialDesignColors/2.0.6": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/MaterialDesignColors.dll": {}
+          "lib/netcoreapp3.1/MaterialDesignColors.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/MaterialDesignColors.dll": {}
+          "lib/netcoreapp3.1/MaterialDesignColors.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "MaterialDesignThemes/4.5.0": {
@@ -17,10 +21,14 @@
           "MaterialDesignColors": "[2.0.6, 3.0.0)"
         },
         "compile": {
-          "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll": {}
+          "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll": {}
+          "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
@@ -107,23 +115,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\omark\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
+      "projectUniqueName": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
       "projectName": "Exam_WPF_Fix",
-      "projectPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
-      "packagesPath": "C:\\Users\\omark\\.nuget\\packages\\",
-      "outputPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\obj\\",
+      "projectPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\omark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -133,8 +141,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj": {
-              "projectPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj"
+            "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj": {
+              "projectPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj"
             }
           }
         }
@@ -160,7 +168,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -172,7 +181,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

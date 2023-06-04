@@ -265,16 +265,22 @@ namespace Exam_WPF.View.Windows
 
         public void LoadProduct(ICollection<Product> _products)
         {
-            foreach (var item in _products)
+            if (products != null)
             {
-                products.Add(item);
+                foreach (var item in _products)
+                {
+                    products.Add(item);
+                }
             }
         }
         public void LoadOrder(ICollection<Order> _orders)
         {
-            foreach (var item in _orders)
+            if (_orders != null)
             {
-                orders.Add(item);
+                foreach (var item in _orders)
+                {
+                    orders.Add(item);
+                }
             }
         }
 

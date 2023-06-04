@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj": {}
+    "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj": {}
   },
   "projects": {
-    "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj": {
+    "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
+        "projectUniqueName": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
         "projectName": "Exam_WPF_Fix",
-        "projectPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
-        "packagesPath": "C:\\Users\\omark\\.nuget\\packages\\",
-        "outputPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\obj\\",
+        "projectPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\Exam_WPF_Fix.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Exam_WPF_Fix\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\omark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj": {
-                "projectPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj"
+              "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj": {
+                "projectPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj"
               }
             }
           }
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,21 +68,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj": {
+    "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\omark\\.nuget\\packages\\",
-        "outputPath": "C:\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\obj\\",
+        "projectPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\HomeWork\\C#\\WPF\\Exam_WPF_Fix\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\omark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,7 +113,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -121,7 +123,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
