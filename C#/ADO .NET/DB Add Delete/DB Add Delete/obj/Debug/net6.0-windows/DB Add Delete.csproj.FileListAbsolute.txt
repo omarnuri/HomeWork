@@ -1,0 +1,42 @@
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.csproj.AssemblyReference.cache
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete_MarkupCompile.cache
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete_MarkupCompile.lref
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\DB Add Delete.exe
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\DB Add Delete.deps.json
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\DB Add Delete.runtimeconfig.json
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\DB Add Delete.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\DB Add Delete.pdb
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\EntityFramework.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\EntityFramework.SqlServerCompact.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\System.Data.SqlServerCe.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.g.resources
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.AssemblyInfo.cs
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.csproj.CopyComplete
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\refint\DB Add Delete.dll
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.pdb
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\DB Add Delete.genruntimeconfig.cache
+C:\Users\Asus\source\repos\DB Add Delete\DB Add Delete\obj\Debug\net6.0-windows\ref\DB Add Delete.dll
