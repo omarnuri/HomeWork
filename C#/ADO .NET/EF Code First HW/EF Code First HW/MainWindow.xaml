@@ -1,0 +1,34 @@
+﻿<Window x:Class="EF_Code_First_HW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EF_Code_First_HW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Имя продукта:" />
+        <TextBox Grid.Row="1" x:Name="txtProductName" />
+
+        <Label Grid.Row="2" Content="Свойство продукта:" />
+        <TextBox Grid.Row="3" x:Name="txtProductProperty" />
+
+        <Button Grid.Row="4" Content="Добавить" Click="btnAdd_Click" />
+        <DataGrid Grid.Row="5" x:Name="Elements">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Binding="{Binding Id}"/>
+                <DataGridTextColumn  Binding="{Binding Name}"/>
+                <DataGridTextColumn  Binding="{Binding Property}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

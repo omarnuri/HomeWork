@@ -1,0 +1,46 @@
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.csproj.AssemblyReference.cache
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW_MarkupCompile.cache
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW_MarkupCompile.lref
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\EF Code First HW.exe
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\EF Code First HW.deps.json
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\EF Code First HW.runtimeconfig.json
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\EF Code First HW.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\EF Code First HW.pdb
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.g.resources
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.AssemblyInfoInputs.cache
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.AssemblyInfo.cs
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.csproj.CoreCompileInputs.cache
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.csproj.CopyComplete
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\refint\EF Code First HW.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.pdb
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\EF Code First HW.genruntimeconfig.cache
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\obj\Debug\net7.0-windows\ref\EF Code First HW.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\EntityFramework.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Humanizer.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Asus\RiderProjects\EF Code First HW\EF Code First HW\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
