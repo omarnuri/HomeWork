@@ -117,7 +117,7 @@ namespace Exam_WPF.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Exam_WPF_Fix;component/view/windows/registration_windows.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Exam_WPF_Fix;V1.0.0.0;component/view/windows/registration_windows.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Windows\Registration_Windows.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
